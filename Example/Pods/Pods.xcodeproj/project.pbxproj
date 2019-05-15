@@ -10,7 +10,7 @@
 		4BD1CFB8BE7616B00B57EB9C4E25ECE3 /* UniversalLoaderPod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6351EBA1B8072E4A36205CB1267509 /* UniversalLoaderPod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C3C90FE71BBEA10DB40953F58772578 /* Pods-UniversalLoaderPod_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02A40DBF85CCB9A7368D9EF89237246F /* Pods-UniversalLoaderPod_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80CAE8BEF4DE14CF1E0E24D71CF2B23B /* UniversalLoaderPod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 861BE96309E3AFC0BA8C4789C7509D97 /* UniversalLoaderPod-dummy.m */; };
-		883C322DB53B8CD84A04AC90AE137485 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDCAB56F3C6E54DE7E9638A3BE5BFDA /* ReplaceMe.swift */; };
+		883C322DB53B8CD84A04AC90AE137485 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDCAB56F3C6E54DE7E9638A3BE5BFDA /* Loader.swift */; };
 		DB2808859D261014698A8E528A8342DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		DEF28F13FC776C35BE8D11797514F784 /* Pods-UniversalLoaderPod_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C598FE03300F8EF6EFD8DEEC5DA935 /* Pods-UniversalLoaderPod_Tests-dummy.m */; };
 		E22913B4B975E1F280F18CD0E5C53976 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
@@ -28,11 +28,11 @@
 
 /* Begin PBXFileReference section */
 		02A40DBF85CCB9A7368D9EF89237246F /* Pods-UniversalLoaderPod_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UniversalLoaderPod_Tests-umbrella.h"; sourceTree = "<group>"; };
-		36068F629BCA2B34CE93499A72C193B2 /* Pods_UniversalLoaderPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UniversalLoaderPod_Tests.framework; path = "Pods-UniversalLoaderPod_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36068F629BCA2B34CE93499A72C193B2 /* Pods_UniversalLoaderPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniversalLoaderPod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB0EA89F8EBA8DDD8F4711F039E98C6 /* Pods-UniversalLoaderPod_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UniversalLoaderPod_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4CE07BF22308E2199CC67F98FC78436D /* UniversalLoaderPod-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UniversalLoaderPod-prefix.pch"; sourceTree = "<group>"; };
 		55A059FCEE24523BC754E59BA4EF49EC /* Pods-UniversalLoaderPod_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UniversalLoaderPod_Tests.modulemap"; sourceTree = "<group>"; };
-		58AAFF8C276C95D7CAE8AB41F96E231B /* UniversalLoaderPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UniversalLoaderPod.framework; path = UniversalLoaderPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58AAFF8C276C95D7CAE8AB41F96E231B /* UniversalLoaderPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UniversalLoaderPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5CBD0DAEC87F992B7699F72E63FE60AC /* Pods-UniversalLoaderPod_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UniversalLoaderPod_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6079D3C30A34F356720170D6E2F319BB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,16 +40,16 @@
 		83BA000B733858669B40CCA247D3BDDB /* UniversalLoaderPod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UniversalLoaderPod.xcconfig; sourceTree = "<group>"; };
 		861BE96309E3AFC0BA8C4789C7509D97 /* UniversalLoaderPod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UniversalLoaderPod-dummy.m"; sourceTree = "<group>"; };
 		87FB0EE2C85E474CC3AE7FF17F4D3070 /* UniversalLoaderPod.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UniversalLoaderPod.modulemap; sourceTree = "<group>"; };
-		880C5BD84AE2C83780FBE114A7056D02 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		880C5BD84AE2C83780FBE114A7056D02 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		8B0DF4CC7AF3B1A8F0BEE425128C8033 /* Pods-UniversalLoaderPod_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UniversalLoaderPod_Tests-resources.sh"; sourceTree = "<group>"; };
 		8F81414758621C2910C6B1CD428046B1 /* Pods-UniversalLoaderPod_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UniversalLoaderPod_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		91857078C0D09C7A06CD9F7DC31BA092 /* Pods-UniversalLoaderPod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UniversalLoaderPod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9CEB6B073DEBD0B9A3856111A5DA6B2F /* UniversalLoaderPod.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = UniversalLoaderPod.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9CEB6B073DEBD0B9A3856111A5DA6B2F /* UniversalLoaderPod.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = UniversalLoaderPod.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AD6351EBA1B8072E4A36205CB1267509 /* UniversalLoaderPod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UniversalLoaderPod-umbrella.h"; sourceTree = "<group>"; };
-		C132036F329E67526A4F533A19208774 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C132036F329E67526A4F533A19208774 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C3C598FE03300F8EF6EFD8DEEC5DA935 /* Pods-UniversalLoaderPod_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UniversalLoaderPod_Tests-dummy.m"; sourceTree = "<group>"; };
-		CCDCAB56F3C6E54DE7E9638A3BE5BFDA /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = UniversalLoaderPod/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		CCDCAB56F3C6E54DE7E9638A3BE5BFDA /* Loader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Loader.swift; path = UniversalLoaderPod/Classes/Loader.swift; sourceTree = "<group>"; };
 		E87B34B0C8201DF4335A203E52313762 /* Pods-UniversalLoaderPod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UniversalLoaderPod_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,7 @@
 		53C3446AF6C66FAC848CFE4DF9F73AF6 /* UniversalLoaderPod */ = {
 			isa = PBXGroup;
 			children = (
-				CCDCAB56F3C6E54DE7E9638A3BE5BFDA /* ReplaceMe.swift */,
+				CCDCAB56F3C6E54DE7E9638A3BE5BFDA /* Loader.swift */,
 				AC49CD03F380FBBDE5A27ED94B57D0A8 /* Pod */,
 				9D07A4F1A2FA85F6B957296A87DA52C6 /* Support Files */,
 			);
@@ -275,7 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				883C322DB53B8CD84A04AC90AE137485 /* ReplaceMe.swift in Sources */,
+				883C322DB53B8CD84A04AC90AE137485 /* Loader.swift in Sources */,
 				80CAE8BEF4DE14CF1E0E24D71CF2B23B /* UniversalLoaderPod-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

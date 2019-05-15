@@ -9,8 +9,8 @@
 Pod::Spec.new do |s|
   s.name             = 'UniversalLoaderPod'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of UniversalLoaderPod.'
-
+  s.summary          = 'A Swift library for downloading and caching any generic data from the network.'
+  s.swift_version       = '4.0'
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A Generic data (Images, JSON, XML etc) downloading and caching library for iOS. -Library for data downloading and caching -Demo project including lazy loading of images -Cancel download option -Max capacity cache configuration option
                        DESC
 
   s.homepage         = 'https://github.com/abdulbasitnaqash/UniversalLoaderPod'
