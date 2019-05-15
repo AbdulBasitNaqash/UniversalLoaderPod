@@ -1,0 +1,6 @@
+use_frameworks!
+target 'UniversalLoaderPod_Tests' do
+  pod 'UniversalLoaderPod', :path => '../'
+  
+  
+end
