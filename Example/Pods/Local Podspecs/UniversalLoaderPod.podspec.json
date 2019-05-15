@@ -1,0 +1,22 @@
+{
+  "name": "UniversalLoaderPod",
+  "version": "0.1.0",
+  "summary": "A short description of UniversalLoaderPod.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/abdulbasitnaqash/UniversalLoaderPod",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "abdulbasitnaqash": "basit@trialx.com"
+  },
+  "source": {
+    "git": "https://github.com/abdulbasitnaqash/UniversalLoaderPod.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "UniversalLoaderPod/Classes/**/*"
+}

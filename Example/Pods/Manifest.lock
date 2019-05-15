@@ -1,0 +1,16 @@
+PODS:
+  - UniversalLoaderPod (0.1.0)
+
+DEPENDENCIES:
+  - UniversalLoaderPod (from `../`)
+
+EXTERNAL SOURCES:
+  UniversalLoaderPod:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  UniversalLoaderPod: 4ef20328117180fd0066d63428a4ffb735849ebe
+
+PODFILE CHECKSUM: 2cdcfc48a180a7945ca1220b97c2aca1c98c4045
+
+COCOAPODS: 1.5.3

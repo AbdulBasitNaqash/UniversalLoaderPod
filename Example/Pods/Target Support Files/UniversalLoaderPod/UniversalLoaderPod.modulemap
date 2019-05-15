@@ -1,0 +1,6 @@
+framework module UniversalLoaderPod {
+  umbrella header "UniversalLoaderPod-umbrella.h"
+
+  export *
+  module * { export * }
+}
